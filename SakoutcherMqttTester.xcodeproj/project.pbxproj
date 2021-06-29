@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1C8FD878268B5D29006571CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD877268B5D29006571CF /* AppDelegate.swift */; };
-		1C8FD87A268B5D29006571CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD879268B5D29006571CF /* SceneDelegate.swift */; };
-		1C8FD87C268B5D29006571CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD87B268B5D29006571CF /* ViewController.swift */; };
-		1C8FD87F268B5D29006571CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8FD87D268B5D29006571CF /* Main.storyboard */; };
 		1C8FD881268B5D2A006571CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8FD880268B5D2A006571CF /* Assets.xcassets */; };
 		1C8FD884268B5D2A006571CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8FD882268B5D2A006571CF /* LaunchScreen.storyboard */; };
 		1C8FD88F268B5D2A006571CF /* SakoutcherMqttTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD88E268B5D2A006571CF /* SakoutcherMqttTesterTests.swift */; };
 		1C8FD89A268B5D2A006571CF /* SakoutcherMqttTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD899268B5D2A006571CF /* SakoutcherMqttTesterUITests.swift */; };
+		1C8FD8A9268B5D6F006571CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD8A7268B5D6F006571CF /* HomeViewController.swift */; };
+		1C8FD8AA268B5D6F006571CF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8FD8A8268B5D6F006571CF /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +36,6 @@
 /* Begin PBXFileReference section */
 		1C8FD874268B5D29006571CF /* SakoutcherMqttTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SakoutcherMqttTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8FD877268B5D29006571CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C8FD879268B5D29006571CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C8FD87B268B5D29006571CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C8FD87E268B5D29006571CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C8FD880268B5D2A006571CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C8FD883268B5D2A006571CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C8FD885268B5D2A006571CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +45,8 @@
 		1C8FD895268B5D2A006571CF /* SakoutcherMqttTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SakoutcherMqttTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8FD899268B5D2A006571CF /* SakoutcherMqttTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SakoutcherMqttTesterUITests.swift; sourceTree = "<group>"; };
 		1C8FD89B268B5D2A006571CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8FD8A7268B5D6F006571CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1C8FD8A8268B5D6F006571CF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				1C8FD877268B5D29006571CF /* AppDelegate.swift */,
-				1C8FD879268B5D29006571CF /* SceneDelegate.swift */,
-				1C8FD87B268B5D29006571CF /* ViewController.swift */,
-				1C8FD87D268B5D29006571CF /* Main.storyboard */,
 				1C8FD880268B5D2A006571CF /* Assets.xcassets */,
 				1C8FD882268B5D2A006571CF /* LaunchScreen.storyboard */,
 				1C8FD885268B5D2A006571CF /* Info.plist */,
+				1C8FD8A7268B5D6F006571CF /* HomeViewController.swift */,
+				1C8FD8A8268B5D6F006571CF /* HomeViewController.xib */,
 			);
 			path = SakoutcherMqttTester;
 			sourceTree = "<group>";
@@ -233,7 +230,7 @@
 			files = (
 				1C8FD884268B5D2A006571CF /* LaunchScreen.storyboard in Resources */,
 				1C8FD881268B5D2A006571CF /* Assets.xcassets in Resources */,
-				1C8FD87F268B5D29006571CF /* Main.storyboard in Resources */,
+				1C8FD8AA268B5D6F006571CF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8FD87C268B5D29006571CF /* ViewController.swift in Sources */,
 				1C8FD878268B5D29006571CF /* AppDelegate.swift in Sources */,
-				1C8FD87A268B5D29006571CF /* SceneDelegate.swift in Sources */,
+				1C8FD8A9268B5D6F006571CF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +292,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C8FD87D268B5D29006571CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C8FD87E268B5D29006571CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C8FD882268B5D2A006571CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
