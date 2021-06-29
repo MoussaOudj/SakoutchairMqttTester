@@ -22,6 +22,8 @@
 		1C8FD8B9268B62B2006571CF /* PublishTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD8B7268B62B2006571CF /* PublishTopicViewController.swift */; };
 		1C8FD8BA268B62B2006571CF /* PublishTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8FD8B8268B62B2006571CF /* PublishTopicViewController.xib */; };
 		1C8FD8BC268B657A006571CF /* MqttRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD8BB268B657A006571CF /* MqttRequester.swift */; };
+		1C8FD8BF268B7B2A006571CF /* CapteurJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD8BE268B7B2A006571CF /* CapteurJSON.swift */; };
+		1C8FD8C1268B7EEE006571CF /* TestDataCapteurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD8C0268B7EEE006571CF /* TestDataCapteurs.swift */; };
 		715FBDF72F7F629B651ABFD0 /* Pods_SakoutcherMqttTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5CB825A9C3C42C3424B5E8 /* Pods_SakoutcherMqttTester.framework */; };
 		B96A738FC76EB11696BDED8B /* Pods_SakoutcherMqttTester_SakoutcherMqttTesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FCCA55CFA2268A9821D67C /* Pods_SakoutcherMqttTester_SakoutcherMqttTesterUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		1C8FD8B7268B62B2006571CF /* PublishTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishTopicViewController.swift; sourceTree = "<group>"; };
 		1C8FD8B8268B62B2006571CF /* PublishTopicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PublishTopicViewController.xib; sourceTree = "<group>"; };
 		1C8FD8BB268B657A006571CF /* MqttRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttRequester.swift; sourceTree = "<group>"; };
+		1C8FD8BE268B7B2A006571CF /* CapteurJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapteurJSON.swift; sourceTree = "<group>"; };
+		1C8FD8C0268B7EEE006571CF /* TestDataCapteurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataCapteurs.swift; sourceTree = "<group>"; };
 		26D5F343DBBDC33284A29F40 /* Pods-SakoutcherMqttTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTester.release.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTester/Pods-SakoutcherMqttTester.release.xcconfig"; sourceTree = "<group>"; };
 		4F42867FBECCFA80B0B5502A /* Pods-SakoutcherMqttTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTesterTests.release.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTesterTests/Pods-SakoutcherMqttTesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		5C71F6D02B1772E38FCD8E76 /* Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests.release.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests/Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		1C8FD876268B5D29006571CF /* SakoutcherMqttTester */ = {
 			isa = PBXGroup;
 			children = (
+				1C8FD8BD268B7B16006571CF /* Model */,
 				1C8FD8AD268B6238006571CF /* Network */,
 				1C8FD8AC268B610C006571CF /* ViewController */,
 				1C8FD8AB268B6106006571CF /* View */,
@@ -185,6 +190,15 @@
 				1C8FD8BB268B657A006571CF /* MqttRequester.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1C8FD8BD268B7B16006571CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C8FD8BE268B7B2A006571CF /* CapteurJSON.swift */,
+				1C8FD8C0268B7EEE006571CF /* TestDataCapteurs.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7358FB4AB053AB7959CB8E75 /* Frameworks */ = {
@@ -452,6 +466,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8FD878268B5D29006571CF /* AppDelegate.swift in Sources */,
+				1C8FD8BF268B7B2A006571CF /* CapteurJSON.swift in Sources */,
+				1C8FD8C1268B7EEE006571CF /* TestDataCapteurs.swift in Sources */,
 				1C8FD8B5268B629C006571CF /* GetSonarsViewController.swift in Sources */,
 				1C8FD8BC268B657A006571CF /* MqttRequester.swift in Sources */,
 				1C8FD8B0268B6276006571CF /* GetPayloadViewController.swift in Sources */,

@@ -8,6 +8,7 @@
 import Foundation
 import Moscapsule
 
+
 public class MqttRequester {
     
     static var mqttClient:MQTTClient?
@@ -29,6 +30,12 @@ public class MqttRequester {
                 return
             }
             print("Message reçu = \(msg)")
+            
+            if mqttMessage.topic == "sakoutcher/test/payload" {
+                print("PAYLOAD CONVERT")
+                let capteurJSON = try? JSONDecoder().decode(CapteurJSON.self, from: msg.data(using: .utf8)!)
+                TestDataCapteurs.capteursData = capteurJSON
+            }
         }
         
         mqttConfig.onSubscribeCallback = { (messageId, grantedQos) in

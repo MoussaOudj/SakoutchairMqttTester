@@ -12,7 +12,7 @@ class GetSonarsViewController: UIViewController {
     
     @IBOutlet weak var lineChartView: LineChartView!
     
-    var numbers : [Double] = [2,4,6,8,10]
+    var numbers : [Int] = TestDataCapteurs.capteursData?.capteurs.sonar ?? [1,2,3]
     
 
     override func viewDidLoad() {
@@ -21,20 +21,22 @@ class GetSonarsViewController: UIViewController {
         
         var lineChartEntry  = [ChartDataEntry]() //this is the Array that will eventually be displayed on the graph.
         
+        
+        
         for i in 0 ..< numbers.count {
-            let value = ChartDataEntry(x: Double(i), y: numbers[i]) // here we set the X and Y status in a data chart entry
+            let value = ChartDataEntry(x: Double(i), y: Double(numbers[i])) // here we set the X and Y status in a data chart entry
             lineChartEntry.append(value) // here we add it to the data set
         }
 
-               let line1 = LineChartDataSet(entries: lineChartEntry, label: "Number") //Here we convert lineChartEntry to a LineChartDataSet
+               let line1 = LineChartDataSet(entries: lineChartEntry, label: "Distance")
                line1.colors = [NSUIColor.blue] //Sets the colour to blue
 
-               let data = LineChartData() //This is the object that will be added to the chart
-               data.addDataSet(line1) //Adds the line to the dataSet
+               let data = LineChartData()
+               data.addDataSet(line1)
                
 
-        lineChartView.data = data //finally - it adds the chart data to the chart and causes an update
-        lineChartView.chartDescription?.text = "My awesome chart" // Here we set the description for the graph
+        lineChartView.data = data
+        lineChartView.chartDescription?.text = "Current sonnar value"
         
     }
     
