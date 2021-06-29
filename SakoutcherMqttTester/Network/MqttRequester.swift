@@ -28,7 +28,11 @@ public class MqttRequester {
             guard let msg = mqttMessage.payloadString else {
                 return
             }
-            print("MQTT Message received: payload=\(msg)")
+            print("Message reçu = \(msg)")
+        }
+        
+        mqttConfig.onSubscribeCallback = { (messageId, grantedQos) in
+          print("subscribed (mid=\(messageId),grantedQos=\(grantedQos))")
         }
         
         // create new MQTT Connection

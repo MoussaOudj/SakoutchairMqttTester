@@ -18,15 +18,22 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
         MqttRequester.prepareRequester()
-        MqttRequester.mqttClient?.subscribe("sakoutcher/test/payload", qos: 0)
-        MqttRequester.mqttClient?.subscribe("sakoutcher/test/sonar1", qos: 0)
-        MqttRequester.mqttClient?.subscribe("sakoutcher/test/sonar2", qos: 0)
-        MqttRequester.mqttClient?.subscribe("sakoutcher/test/sonar3", qos: 0)
+       
+        guard let mqttClient = MqttRequester.mqttClient else {
+            return
+        }
+       
+        mqttClient.subscribe("sakoutcher/test/payload", qos: 0)
+        mqttClient.subscribe("sakoutcher/test/sonar1", qos: 0)
+        mqttClient.subscribe("sakoutcher/test/sonar2", qos: 0)
+        mqttClient.subscribe("sakoutcher/test/sonar3", qos: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
     }
 
     @IBAction func navigateToPayloadView(_ sender: UIButton) {
