@@ -1,0 +1,6 @@
+framework module Pods_SakoutcherMqttTester {
+  umbrella header "Pods-SakoutcherMqttTester-umbrella.h"
+
+  export *
+  module * { export * }
+}
