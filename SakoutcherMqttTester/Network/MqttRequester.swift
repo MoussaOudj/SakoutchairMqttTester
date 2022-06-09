@@ -15,7 +15,7 @@ public class MqttRequester {
     
     public static func prepareRequester() {
         // set MQTT Client Configuration
-        let mqttConfig = MQTTConfig(clientId: "99ab8a569d244195954e17b8d842c8d6", host: "test.mosquitto.org", port: 1883, keepAlive: 60)
+        let mqttConfig = MQTTConfig(clientId: "8e76435fd1e94d5182e85d36900c506b", host: "cindy.local", port: 1883, keepAlive: 3600)
         
         mqttConfig.onConnectCallback = { returnCode in
             print("CONNECTED : \(returnCode.description)")
@@ -26,15 +26,15 @@ public class MqttRequester {
         }
         
         mqttConfig.onMessageCallback = { mqttMessage in
+           
             guard let msg = mqttMessage.payloadString else {
                 return
             }
-            print("Message reçu = \(msg)")
             
-            if mqttMessage.topic == "sakoutcher/test/payload" {
-                print("PAYLOAD CONVERT")
-                let capteurJSON = try? JSONDecoder().decode(CapteurJSON.self, from: msg.data(using: .utf8)!)
-                TestDataCapteurs.capteursData = capteurJSON
+            if mqttMessage.topic == "sonar/distance" {
+                let distanceSingleton = DistanceSingleton.sharedInstance
+                distanceSingleton.distance = msg
+                print("Message reçu = \(msg)")
             }
         }
         

@@ -8,45 +8,33 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var getPayloadButton: UIButton!
     
-    @IBOutlet weak var getSonarsButton: UIButton!
-    
-    @IBOutlet weak var publishButton: UIButton!
+    @IBOutlet weak var distanceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("VIEW DID LOAD")
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
         
         MqttRequester.prepareRequester()
        
         guard let mqttClient = MqttRequester.mqttClient else {
             return
         }
-       
-        mqttClient.subscribe("sakoutcher/test/payload", qos: 0)
-        mqttClient.subscribe("sakoutcher/test/sonar1", qos: 0)
-        mqttClient.subscribe("sakoutcher/test/sonar2", qos: 0)
-        mqttClient.subscribe("sakoutcher/test/sonar3", qos: 0)
+        
+        print(mqttClient.isConnected)
+        mqttClient.subscribe("sonar/distance", qos: 0)
+        
+        _ = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(getDisance), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        
-    }
-
-    @IBAction func navigateToPayloadView(_ sender: UIButton) {
-        self.navigationController?.pushViewController(GetPayloadViewController(), animated: true)
     }
     
-    
-    @IBAction func navigateToSonarsView(_ sender: UIButton) {
-        self.navigationController?.pushViewController(GetSonarsViewController(), animated: true)
+    @objc func getDisance() {
+        let distanceSingleton = DistanceSingleton.sharedInstance
+        self.distanceLabel.text = distanceSingleton.distance + " cm"
     }
-    
-    @IBAction func navigateToPublishView(_ sender: UIButton) {
-        self.navigationController?.pushViewController(PublishTopicViewController(), animated: true)
-    }
-    
 }
