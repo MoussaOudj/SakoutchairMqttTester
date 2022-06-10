@@ -18,6 +18,7 @@
 		1C8FD8AA268B5D6F006571CF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8FD8A8268B5D6F006571CF /* HomeViewController.xib */; };
 		1C8FD8BC268B657A006571CF /* MqttRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FD8BB268B657A006571CF /* MqttRequester.swift */; };
 		715FBDF72F7F629B651ABFD0 /* Pods_SakoutcherMqttTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5CB825A9C3C42C3424B5E8 /* Pods_SakoutcherMqttTester.framework */; };
+		A0406F5A2852077F008A77E2 /* 16951-ventilation.json in Resources */ = {isa = PBXBuildFile; fileRef = A0406F592852077F008A77E2 /* 16951-ventilation.json */; };
 		B96A738FC76EB11696BDED8B /* Pods_SakoutcherMqttTester_SakoutcherMqttTesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FCCA55CFA2268A9821D67C /* Pods_SakoutcherMqttTester_SakoutcherMqttTesterUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		26D5F343DBBDC33284A29F40 /* Pods-SakoutcherMqttTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTester.release.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTester/Pods-SakoutcherMqttTester.release.xcconfig"; sourceTree = "<group>"; };
 		4F42867FBECCFA80B0B5502A /* Pods-SakoutcherMqttTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTesterTests.release.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTesterTests/Pods-SakoutcherMqttTesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		5C71F6D02B1772E38FCD8E76 /* Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests.release.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests/Pods-SakoutcherMqttTester-SakoutcherMqttTesterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0406F592852077F008A77E2 /* 16951-ventilation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "16951-ventilation.json"; sourceTree = "<group>"; };
 		AB715D8A61BC67D217C0BAE8 /* Pods-SakoutcherMqttTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTesterTests.debug.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTesterTests/Pods-SakoutcherMqttTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB5CB825A9C3C42C3424B5E8 /* Pods_SakoutcherMqttTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SakoutcherMqttTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C216686A6DB7B20F1D341F89 /* Pods-SakoutcherMqttTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakoutcherMqttTester.debug.xcconfig"; path = "Target Support Files/Pods-SakoutcherMqttTester/Pods-SakoutcherMqttTester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		1C8FD876268B5D29006571CF /* SakoutcherMqttTester */ = {
 			isa = PBXGroup;
 			children = (
+				A0406F592852077F008A77E2 /* 16951-ventilation.json */,
 				1C8FD8BD268B7B16006571CF /* Model */,
 				1C8FD8AD268B6238006571CF /* Network */,
 				1C8FD8AC268B610C006571CF /* ViewController */,
@@ -313,6 +316,7 @@
 			files = (
 				1C8FD884268B5D2A006571CF /* LaunchScreen.storyboard in Resources */,
 				1C8FD881268B5D2A006571CF /* Assets.xcassets in Resources */,
+				A0406F5A2852077F008A77E2 /* 16951-ventilation.json in Resources */,
 				1C8FD8AA268B5D6F006571CF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,13 +618,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9KB8H9886R;
+				DEVELOPMENT_TEAM = F6QF2YD33Q;
 				INFOPLIST_FILE = SakoutcherMqttTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.SakoutcherMqttTester;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cnguyen.sakoutchairmqtt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -634,13 +638,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9KB8H9886R;
+				DEVELOPMENT_TEAM = F6QF2YD33Q;
 				INFOPLIST_FILE = SakoutcherMqttTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.SakoutcherMqttTester;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cnguyen.sakoutchairmqtt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

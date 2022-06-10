@@ -10,6 +10,7 @@ target 'SakoutcherMqttTester' do
   pod 'Moscapsule', :git => 'https://github.com/flightonary/Moscapsule.git'
   pod 'OpenSSL-Universal'
   pod 'Charts', '~> 3.6'
+  pod 'lottie-ios'
 
   target 'SakoutcherMqttTesterTests' do
     inherit! :search_paths

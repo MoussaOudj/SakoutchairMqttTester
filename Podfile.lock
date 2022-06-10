@@ -2,17 +2,20 @@ PODS:
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
+  - lottie-ios (3.2.3)
   - Moscapsule (0.6.4)
   - OpenSSL-Universal (1.0.1.20)
 
 DEPENDENCIES:
   - Charts (~> 3.6)
+  - lottie-ios
   - Moscapsule (from `https://github.com/flightonary/Moscapsule.git`)
   - OpenSSL-Universal
 
 SPEC REPOS:
   trunk:
     - Charts
+    - lottie-ios
     - OpenSSL-Universal
 
 EXTERNAL SOURCES:
@@ -26,9 +29,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Moscapsule: 6bb834c60e24251897dc1cb2c4552fd674f887f3
   OpenSSL-Universal: 71f2c4b2ae758e2218090f905e95ca0ac5c01be7
 
-PODFILE CHECKSUM: aeb4d136a75115de398d81a190dff45591ef3524
+PODFILE CHECKSUM: a6cf0f3d0b11710f2e4ab336e26b862665c9d933
 
 COCOAPODS: 1.11.3
